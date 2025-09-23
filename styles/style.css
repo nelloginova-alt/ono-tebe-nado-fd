@@ -38,6 +38,7 @@
 .address {
   max-width: 240px;
   font-size: 18px;
+  font-style: normal;
   justify-self: end;
 }
 
@@ -248,6 +249,10 @@
 
 .footer_address-list {
   list-style-type: none;
+}
+
+.footer_address {
+  font-style: normal;
 }
 
 .footer_address-link {
