@@ -16,9 +16,6 @@
   list-style-type: circle;
 }
 
-.header_menu-item {
-}
-
 .header_menu-item_active {
   border-bottom: 0;
   text-decoration-color: #fff;
@@ -46,9 +43,6 @@
 
 .header_address-list {
   list-style-type: none;
-}
-
-.header_address-item {
 }
 
 .header_address-link {
@@ -252,21 +246,12 @@
   padding: 180px 50px 82px;
 }
 
-.footer_address {
-}
-
 .footer_address-list {
   list-style-type: none;
 }
 
-.footer_address-link-item {
-}
-
 .footer_address-link {
   text-underline-offset: 16%;
-}
-
-.footer_menu {
 }
 
 .footer_menu-list {
@@ -276,17 +261,8 @@
   list-style-type: none;
 }
 
-.footer_menu-list-item {
-}
-
 .footer_menu-link {
   text-underline-offset: 16%;
-}
-
-.footer_menu-link_active {
-}
-
-.footer_social {
 }
 
 .footer_social-list {
@@ -297,9 +273,6 @@
 
 .footer_social-list-item {
   padding-left: 10px;
-}
-
-.footer_social-link {
 }
 
 .footer_social-icon {
