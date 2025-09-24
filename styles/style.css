@@ -17,13 +17,16 @@
 }
 
 .header_menu-item_active {
-  border-bottom: 0;
-  text-decoration-color: #fff;
   list-style-type: none;
 }
 
 .header_menu-link {
   text-underline-offset: 16%;
+}
+
+.menu-link_active {
+  border-bottom: 0;
+  text-decoration-color: #fff;
 }
 
 .header_logo {
@@ -36,17 +39,21 @@
 }
 
 .address {
-  max-width: 240px;
   font-size: 18px;
   font-style: normal;
+}
+
+.header_address {
+  max-width: 240px;
   justify-self: end;
 }
 
-.header_address-list {
+.address-list {
   list-style-type: none;
 }
 
-.header_address-link {
+.address-link {
+  line-height: 1.4;
   text-underline-offset: 16%;
 }
 
@@ -108,16 +115,16 @@
   word-spacing: 19px;
 }
 
+.spacing {
+  letter-spacing: 0;
+}
+
 .bet-button {
   all: unset;
   font-size: 22px;
   font-weight: 500;
   border: 1px solid white;
   padding: 12px 31px;
-}
-
-.spacing {
-  letter-spacing: 0;
 }
 
 .lots {
@@ -156,25 +163,21 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-size: cover;
+  background-position: center;
   padding: 48px 40px;
 }
 
 .card_type_film {
   background-image: url("../images/card-lot-01.jpg");
-  background-size: cover;
-  background-position: center;
 }
 
 .card_type_book {
   background-image: url("../images/card-lot-02.jpg");
-  background-size: cover;
-  background-position: center;
 }
 
 .card_type_picture {
   background-image: url("../images/card-lot-03.jpg");
-  background-size: cover;
-  background-position: center;
 }
 
 .card_title {
@@ -205,11 +208,15 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr auto;
+  grid-template-areas:
+    "logo title"
+    ". text";
   column-gap: 25px;
   row-gap: 8px;
 }
 
 .about_logo {
+  grid-area: logo;
   margin: 0 auto;
 }
 
@@ -229,12 +236,14 @@
 }
 
 .about_title {
+  grid-area: title;
   margin-top: 100px;
   font-size: 40px;
   text-transform: uppercase;
 }
 
 .about_text {
+  grid-area: text;
   display: grid;
   row-gap: 24px;
 }
@@ -245,18 +254,6 @@
   justify-content: space-between;
   font-size: 18px;
   padding: 180px 50px 82px;
-}
-
-.footer_address-list {
-  list-style-type: none;
-}
-
-.footer_address {
-  font-style: normal;
-}
-
-.footer_address-link {
-  text-underline-offset: 16%;
 }
 
 .footer_menu-list {
